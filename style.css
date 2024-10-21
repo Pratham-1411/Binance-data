@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin:0px;
+    /* background-image: url("https://media.istockphoto.com/id/1145592947/photo/bitcoin.jpg?s=612x612&w=0&k=20&c=od4w9UHTdjOKQ-H-Mq2YfhuDilEAaEBtfXlamCL9LN8=");
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #abe1f7;
+    line-height: 0%;
+}
+
+.curr,
+.time {
+    margin-top: 1.5%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+#chartContainer {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: aliceblue;
+}
+
+canvas {
+    width: 100% !important;
+    height: 400px !important; /* Ensure the canvas has a height */
+}
+
+select {
+    border: 2px solid rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8em;
+}
+
+#char
+{
+    background-image: url("https://media.istockphoto.com/id/1358927461/photo/currency-and-exchange-stock-chart-for-finance-and-economy-display.jpg?s=612x612&w=0&k=20&c=vkAkyHjS9zXQJGw9eQXrD4e7nxGW4xHs-y1Qox-92DA=");
+    height: auto;
+    width: auto;
+}

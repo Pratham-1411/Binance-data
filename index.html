@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binance Market Data WebSocket</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Include Chart.js Zoom Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom"></script>
+
+    <!-- Include Date Adapter (date-fns) -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+</head>
+<body>
+
+<nav>
+    <div>
+        <h2>Binance Market Data</h2>
+    </div>
+
+    <!-- Dropdown for selecting the cryptocurrency -->
+    <div class="curr">
+        <label for="coinSelect">Select Cryptocurrency:</label>
+        <select id="coinSelect">
+            <option value="ethusdt">ETH/USDT</option>
+            <option value="bnbusdt">BNB/USDT</option>
+            <option value="dotusdt">DOT/USDT</option>
+        </select>
+    </div>
+
+    <!-- Dropdown for selecting the interval -->
+    <div class="time">
+        <label for="intervalSelect">Select Interval:</label>
+        <select id="intervalSelect">
+            <option value="1m">1 Minute</option>
+            <option value="3m">3 Minutes</option>
+            <option value="5m">5 Minutes</option>
+            <option value="15m">15 Minutes</option>
+            <!-- <option value="30m">30 Minutes</option>
+            <option value="1h">1 Hour</option>
+            <option value="4h">4 Hour</option> -->
+        </select>
+    </div>
+</nav>
+
+<!-- Chart container -->
+<section id="char">
+    <div id="chartContainer">
+        <canvas id="myChart"></canvas>
+    </div>
+</section>
+
+
+
+<script src="index.js"></script>
+</body>
+</html>
